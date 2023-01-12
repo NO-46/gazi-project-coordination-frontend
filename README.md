@@ -1,10 +1,6 @@
-# CRA Hipo TypeScript Template Ap
+# Gazi Project Coordination Project | Frontend
 
-Short description of the project
-
-- Web App: [app.domain.com](#)
-- Design: [Figma](#)
-- Codebase: [Dashboard](#)
+In this project, which will be realized as a web project, it is aimed that the Graduation Projects Coordinatorship, academic advisors and students within the Computer Engineering Department of Gazi University Engineering Faculty will be able to systematically follow the execution of the graduation projects. In this context, the target audience of our project is Gazi University Engineering Faculty Computer Engineering Department students, academicians and coordinators, and our main goal is to provide a fast and easy project process management among these users.
 
 ## Development
 
@@ -25,7 +21,7 @@ Recommended system versions
 
 ### Deploy
 
-Either GitHub workflows or CircleCI is used for deployments. Check [Setting Up a New Project](https://github.com/Hipo/web-handbook/blob/master/setting-up-a-new-project.md) section in our handbook for more details.
+There is no deployment at the moment. We will use Github Actions for deployments.
 
 ### Husky and lint-staged
 
@@ -34,10 +30,6 @@ Either GitHub workflows or CircleCI is used for deployments. Check [Setting Up a
 ## Contribution
 
 All development branches should be checked out from `next-release` branch and pull requests should be opened against the `next-release` branch.
-
-### Versioning
-
-We follow [SemVer](https://semver.org/) convention to update the version for each release.
 
 ### Commit Messages
 
