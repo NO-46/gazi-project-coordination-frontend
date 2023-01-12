@@ -1,0 +1,40 @@
+@import "../core/ui/style/media-queries";
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 400px;
+  height: 400px;
+}
+
+.login-page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-page__input {
+  width: 100%;
+
+  .input {
+    border-radius: 8px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.login-page__button {
+  width: 100%;
+}
+
+@include for-mobile-screens {
+  .login-page {
+    width: 100%;
+    height: 100%;
+  }
+}

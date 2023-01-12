@@ -1,0 +1,28 @@
+@import "../../../core/ui/style/_media-queries.scss";
+
+.page-footer {
+  padding: 36px var(--page-body-horizontal-padding);
+
+  border-top: 1px solid var(--gray-200);
+}
+
+.page-footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: var(--page-content-max-width);
+
+  margin: auto;
+}
+
+.page-footer__logo {
+  width: 75px;
+}
+
+@include for-small-screens {
+  .page-footer {
+    padding: 16px;
+  }
+}

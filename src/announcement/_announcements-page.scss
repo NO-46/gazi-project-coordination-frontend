@@ -1,0 +1,29 @@
+.announcements-page__title {
+  margin-bottom: 32px;
+}
+
+.announcements-page__announcements {
+  width: 620px;
+
+  padding: 28px;
+
+  background-color: var(--card-default);
+  border-radius: 16px;
+  box-shadow: var(--shadow-small);
+}
+
+.announcements-page__announcements__item {
+  padding: 16px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--gray-200);
+  }
+}
+
+.announcements-page__announcements__item__title {
+  margin-bottom: 4px;
+}
+
+.announcements-page__announcements__item__description {
+  margin-bottom: 4px;
+}

@@ -1,0 +1,95 @@
+{
+  "name": "project-coordination-gazi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@hipo/react-ui-toolkit": "^1.0.1",
+    "@mui/material": "^5.11.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.4",
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.18",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
+    "env-cmd": "^10.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.4",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "check-package-updates": "npx npm-check-updates",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "jsx-a11y"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "@hipo/eslint-config-base",
+      "@hipo/eslint-config-react",
+      "@hipo/eslint-config-typescript",
+      "plugin:jsx-a11y/recommended",
+      "prettier"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@hipo/eslint-config-base": "^4.2.1",
+    "@hipo/eslint-config-react": "^2.3.0",
+    "@hipo/eslint-config-typescript": "^1.2.0",
+    "@hipo/stylelint-config-base": "^2.3.0",
+    "@types/react-router-dom": "^5.3.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "sass": "1.56.1",
+    "prettier": "^2.8.0",
+    "stylelint": "^13.13.1",
+    "stylelint-no-unsupported-browser-features": "^5.0.4",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --config ./.prettierrc.js --write"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ],
+    "src/**/*.{css,scss}": [
+      "stylelint"
+    ]
+  }
+}

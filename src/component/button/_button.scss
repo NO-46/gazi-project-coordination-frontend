@@ -1,0 +1,104 @@
+.button {
+  --button-bg: var(--primary-button-bg);
+  --button-height: 48px;
+
+  height: var(--button-height) !important;
+
+  padding: 14px 16px !important;
+
+  color: var(--button-color) !important;
+  background-color: var(--button-bg) !important;
+
+  border: 2px solid transparent !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+
+  transition: background-color var(--default-animation), color var(--default-animation),
+    border var(--default-animation), box-shadow var(--default-animation) !important;
+
+  svg path {
+    transition: fill var(--default-animation) !important;
+  }
+}
+
+.button--primary {
+  --button-bg: var(--primary-button-bg);
+  --button-color: var(--primary-button-text);
+
+  &:hover,
+  &:focus {
+    --button-bg: var(--primary-button-hover-bg);
+    --button-color: var(--primary-button-hover-text);
+  }
+
+  &.button--is-inactive {
+    --button-bg: var(--primary-button-disabled-bg);
+    --button-color: var(--primary-button-disabled-text);
+  }
+
+  &:active {
+    border: 2px solid var(--white);
+    box-shadow: var(--shadow-pressed);
+  }
+
+  &.button.button--is-inactive.button--is-pending {
+    --button-bg: var(--primary-button-bg);
+    --button-color: var(--primary-button-text);
+
+    opacity: 1;
+
+    .simple-loader path {
+      fill: var(--secondary-button-bg);
+    }
+  }
+}
+
+.button--secondary {
+  --button-bg: var(--secondary-button-bg);
+  --button-color: var(--secondary-button-text);
+
+  border: 2px solid var(--secondary-button-text) !important;
+
+  &:hover {
+    --button-bg: var(--secondary-button-hover-bg);
+    --button-color: var(--secondary-button-hover-text);
+  }
+
+  &.button--is-inactive {
+    --button-bg: var(--secondary-button-disabled-bg);
+    --button-color: var(--secondary-button-disabled-text);
+  }
+
+  &.button.button--is-inactive.button--is-pending {
+    --button-bg: var(--secondary-button-bg);
+    --button-color: var(--secondary-button-text);
+
+    opacity: 1;
+  }
+}
+
+.button--small {
+  --button-height: 28px;
+
+  padding: 6px 12px !important;
+}
+
+.button--medium {
+  --button-height: 40px;
+
+  padding: 10px 16px !important;
+}
+
+.button--large {
+  --button-height: 48px;
+
+  padding: 14px 16px !important;
+}
+
+.button--fluid {
+  width: 100%;
+}
+
+.link-button {
+  display: flex;
+}

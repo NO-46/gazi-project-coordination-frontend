@@ -1,0 +1,57 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  width: 100%;
+
+  padding: 20px 46px;
+
+  color: var(--white);
+  background-color: var(--blue-700);
+
+  text-align: center;
+
+  animation: 0.3s slideAnimationForBanner ease-out;
+
+  .date-timer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: max-content;
+  }
+
+  .date-timer-box {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .date-timer-box__count {
+    padding: 1px 8px;
+
+    color: var(--text-main);
+    background: var(--card-default);
+
+    border-radius: 8px;
+  }
+
+  .date-timer-box__title {
+    margin-top: 0;
+  }
+}
+
+.banner__calendar-icon path {
+  fill: var(--white);
+}
+
+@keyframes slideAnimationForBanner {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

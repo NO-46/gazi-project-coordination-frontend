@@ -1,0 +1,35 @@
+.settings-page__title {
+  margin-bottom: 32px;
+}
+
+.setting-page__list {
+  width: 620px;
+}
+
+.settings-page__list-item {
+  padding: 40px 28px;
+
+  background-color: var(--card-default);
+  border-radius: 16px;
+  box-shadow: var(--shadow-small);
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.settings-page__list-item__title {
+  margin-bottom: 12px;
+}
+
+.settings-page__list-item__description {
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 16px;
+  }
+}
+
+.settings-page__list-item__cta-button {
+  width: 100%;
+}

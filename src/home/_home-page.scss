@@ -1,0 +1,33 @@
+.home-page__login-container {
+  width: 100%;
+
+  padding-top: 15px;
+}
+
+.home-page__illusturation-wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 72px;
+  margin-left: -40px;
+}
+
+.home-page__content-container__title {
+  margin-bottom: 16px;
+}
+
+.home-page__content-container__button {
+  width: 200px;
+}
+
+.home-page__faq-title {
+  margin-bottom: 20px;
+}
+
+.home-page__faq-list__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
